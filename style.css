@@ -57,6 +57,33 @@ div {
     width: 100%;
 }
 
+.main-container {
+    max-width: 1200px; /* Adjust this width as needed */
+    margin: 0 auto; /* Centers the container */
+    padding: 0 20px; /* Adds padding inside the container */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Style your scrollbar (works in most modern browsers) */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 /* Styling for the main wrapper */
 #mys-wrapper {
     height: 100%;
