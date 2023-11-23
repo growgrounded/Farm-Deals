@@ -4,6 +4,47 @@ div {
     padding: 0;
 }
 
+.main-container {
+    max-width: 1200px; /* Adjust this width as needed */
+    margin: 0 auto; /* Centers the container */
+    padding: 0 20px; /* Adds padding inside the container */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Style your scrollbar (works in most modern browsers) */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Styling for the main wrapper */
+#mys-wrapper {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    line-height: normal;
+}
+
 /* Styling for title elements on hover */
 .title:hover,
 .title-line1:hover,
@@ -90,43 +131,3 @@ footer {
     padding-top: 10px;
 }
 
-.main-container {
-    max-width: 1200px; /* Adjust this width as needed */
-    margin: 0 auto; /* Centers the container */
-    padding: 0 20px; /* Adds padding inside the container */
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-/* Style your scrollbar (works in most modern browsers) */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #888;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
-
-/* Styling for the main wrapper */
-#mys-wrapper {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    line-height: normal;
-}
