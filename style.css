@@ -69,8 +69,10 @@ div {
     display: flex;
     justify-content: center;
     line-height: normal;
-    
-    footer {
+}
+
+/* Footer styles should start here, outside of #mys-wrapper */
+footer {
     background-color: #f4f4f4;
     color: #333;
     text-align: center;
@@ -99,5 +101,4 @@ div {
 .footer-bottom {
     border-top: 1px solid #ddd;
     padding-top: 10px;
-}
 }
