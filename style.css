@@ -13,9 +13,10 @@ div {
 }
 
 body {
+    background-color: var(--background-color);
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    
+
 }
 
 .mt-10 { margin-top: 10px; }
