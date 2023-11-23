@@ -25,9 +25,9 @@ html {
 
 /* Main Content Container */
 .main-container {
-    max-width: 1200px; /* Adjust width as needed */
-    margin: 0 auto; /* Center the container */
-    padding: 0 20px; /* Add padding inside the container */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 /* Specific Element and Class Styles */
