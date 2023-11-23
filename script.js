@@ -36,16 +36,7 @@ function handleNewsletterSubscription(event) {
 }
 
 /**
- * Function to display the current date and time in the footer
- */
-function displayDateTime() {
-    const now = new Date();
-    const dateTimeString = now.toLocaleString();
-    document.getElementById('date-time').innerText = `Current Time: ${dateTimeString}`;
-    setTimeout(displayDateTime, 1000); // Update time every second
-}
 
-/**
  * Initialization function to set up the website
  */
 function init() {
