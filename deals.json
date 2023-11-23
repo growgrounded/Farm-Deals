@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Deal 1",
+        "image": "path_to_image_1.jpg",
+        "link": "link_to_deal_1.html",
+        "description": "Description of deal 1..."
+    },
+    {
+        "title": "Deal 2",
+        "image": "path_to_image_2.jpg",
+        "link": "link_to_deal_2.html",
+        "description": "Description of deal 2..."
+    }
+]

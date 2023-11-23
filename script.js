@@ -1,6 +1,3 @@
-/**
- * Function to load daily deals from an API
- */
 async function loadDailyDeals() {
     try {
         // Replace with the actual API endpoint or data source
@@ -8,7 +5,6 @@ async function loadDailyDeals() {
         const deals = await response.json();
         const dealsContainer = document.getElementById('daily-deals');
 
-        // Dynamically create and add deals to the deals container
         deals.forEach(deal => {
             const dealDiv = document.createElement('div');
             dealDiv.className = 'deal';
@@ -21,30 +17,27 @@ async function loadDailyDeals() {
         });
     } catch (error) {
         console.error('Error loading deals:', error);
-        // Handle error (e.g., display a message to the user)
     }
 }
 
-/**
- * Function to handle newsletter subscription form submission
- */
+
+// Function to handle newsletter subscription
 function handleNewsletterSubscription(event) {
     event.preventDefault();
     const email = document.querySelector('#newsletter input[type="email"]').value;
     console.log('Subscribing email:', email);
-    // Add logic to send subscription request (e.g., to a backend server or email service)
+    // Add logic to send subscription request
 }
 
-/**
 
- * Initialization function to set up the website
- */
+// Function to initialize the website
 function init() {
-    loadDailyDeals(); // Load deals when the page loads
-    document.querySelector('#newsletter form').addEventListener('submit', handleNewsletterSubscription); // Set up newsletter subscription form
-    displayDateTime(); // Start displaying the current time
-    // Add more initialization code as needed
+    loadDailyDeals();
+    document.querySelector('#newsletter form').addEventListener('submit', handleNewsletterSubscription);
+    displayDateTime();
+    // Add more initialization code if needed
 }
 
 // Run the init function when the window loads
 window.onload = init;
+
