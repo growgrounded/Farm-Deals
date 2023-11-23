@@ -33,7 +33,7 @@ function handleNewsletterSubscription(event) {
 function displayDateTime() {
     const now = new Date();
     const dateTimeString = now.toLocaleString();
-    document.querySelector('footer').innerText = `© 2023 Farm and Off-Grid Deals - Current Time: ${dateTimeString}`;
+    document.getElementById('date-time').innerText = `Current Time: ${dateTimeString}`;
     setTimeout(displayDateTime, 1000);
 }
 
