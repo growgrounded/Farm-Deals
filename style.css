@@ -1,6 +1,9 @@
 :root {
-    --primary-color: #4CAF50;
-    --secondary-color: #333;
+    --primary-color: #4B6F44; /* Forest Green */
+    --secondary-color: #8B5E3C; /* Rustic Brown */
+    --background-color: #F5F5DC; /* Beige */
+    --accent-color: #C9A66B; /* Muted Gold */
+    --text-color: #333333; /* Dark Grey */
 }
 
 /* Global Resets */
@@ -63,7 +66,7 @@ a:focus {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+.button:hover {
     background-color: var(--primary-color);
     color: white;
 }
@@ -129,8 +132,8 @@ button:hover {
 /* Add styles for the footer and its content below */
 /* Footer Styles */
 footer {
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
     text-align: center;
     padding: 20px 0;
 }
