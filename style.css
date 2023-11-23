@@ -1,15 +1,12 @@
 :root {
-    --primary-color: #2bff00;
-    /* Forest Green */
-    --secondary-color: #8B5E3C;
-    /* Rustic Brown */
-    --background-color: #C9A66B;
-    /* Beige */
-    --accent-color: #C9A66B;
-    /* Muted Gold */
-    --text-color: #333333;
-    /* Dark Grey */
+    --primary-color: #50723C; /* Olive Green: Good for highlights and CTAs */
+    --secondary-color: #A67B5B; /* Earthy Brown: Ideal for headings or important text */
+    --background-color: #FAF3DD; /* Off-white: Light and clean background color */
+    --accent-color: #9A8C98; /* Soft Lavender: Subtle and modern, good for accents */
+    --text-color: #333333; /* Dark Grey: Excellent for primary text for readability */
+    --footer-background: #8B5E3C; /* Rustic Brown: Can be used for footer or other sections */
 }
+
 
 /* Global Resets */
 div {
@@ -25,17 +22,31 @@ div {
 }
 
 .centered img {
-    height: 100px;
+    height: 60px;
     /* Adjust the size as needed */
 }
 
 body {
-    text-align: center;
     background-color: var(--background-color);
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-
+    color: var(--text-color);
 }
+
+h1, h2, h3 {
+    color: var(--secondary-color);
+}
+
+a, .button {
+    background-color: var(--primary-color);
+    color: white; /* For contrast */
+}
+
+.footer-content {
+    background-color: var(--footer-background);
+    color: white; /* For readability */
+}
+
+/* Other specific styles... */
+
 
 .mt-10 {
     margin-top: 10px;
