@@ -1,8 +1,22 @@
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #333;
+}
+
 /* Global Resets */
 div {
     margin: 0;
     padding: 0;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    
+}
+
+.mt-10 { margin-top: 10px; }
+.text-center { text-align: center; }
 
 /* Scrollbar Styles */
 ::-webkit-scrollbar {
@@ -39,6 +53,19 @@ html {
 .title-line2:hover {
     color: rgba(0, 0, 0, 0.59);
     text-decoration: none;
+}
+
+a:focus {
+    outline: 2px solid var(--primary-color);
+}
+
+.button {
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+    color: white;
 }
 
 /* Styles for Specific Classes */
@@ -100,6 +127,7 @@ html {
 
 /* Footer Styles */
 /* Add styles for the footer and its content below */
+/* Footer Styles */
 footer {
     background-color: #f4f4f4;
     color: #333;
@@ -108,7 +136,8 @@ footer {
 }
 
 .footer-content {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-around;
     align-items: start;
     padding-bottom: 20px;
@@ -129,4 +158,11 @@ footer {
 .footer-bottom {
     border-top: 1px solid #ddd;
     padding-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .main-container {
+        padding: 0 10px;
+    }
+    /* Other responsive styles */
 }
