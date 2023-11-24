@@ -1,10 +1,16 @@
 :root {
-    --primary-color: #50723C; /* Olive Green: Good for highlights and CTAs */
-    --secondary-color: #A67B5B; /* Earthy Brown: Ideal for headings or important text */
-    --background-color: #FAF3DD; /* Off-white: Light and clean background color */
-    --accent-color: #9A8C98; /* Soft Lavender: Subtle and modern, good for accents */
-    --text-color: #333333; /* Dark Grey: Excellent for primary text for readability */
-    --footer-background: #8B5E3C; /* Rustic Brown: Can be used for footer or other sections */
+    --primary-color: #f7f9f6;
+    /* Olive Green: Good for highlights and CTAs */
+    --secondary-color: #f6f4f2;
+    /* Earthy Brown: Ideal for headings or important text */
+    --background-color: #FAF3DD;
+    /* Off-white: Light and clean background color */
+    --accent-color: #9A8C98;
+    /* Soft Lavender: Subtle and modern, good for accents */
+    --text-color: #000000;
+    /* Dark Grey: Excellent for primary text for readability */
+    --footer-background: #f0edeb;
+    /* Rustic Brown: Can be used for footer or other sections */
 }
 
 
@@ -31,18 +37,23 @@ body {
     color: var(--text-color);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     color: var(--secondary-color);
 }
 
-a, .button {
+a,
+.button {
     background-color: var(--primary-color);
-    color: white; /* For contrast */
+    color: white;
+    /* For contrast */
 }
 
 .footer-content {
     background-color: var(--footer-background);
-    color: white; /* For readability */
+    color: white;
+    /* For readability */
 }
 
 /* Other specific styles... */
