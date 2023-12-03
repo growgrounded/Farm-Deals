@@ -1,8 +1,15 @@
 [
     {
         "title": "Hydro Flask 20-Oz Stainless Steel Wide Mouth Bottle Only $14.96!",
-        "image": "",
+        "image": "path_to_hydro_flask_image.jpg",
         "link": "https://www.amazon.com/dp/B07G3JC8YZ?smid=ATVPDKIKX0DER&th=1&linkCode=sl1&tag=1426-20&linkId=7b6a8a4d8e090f351d89913e506a2a20&language=en_US&ref_=as_li_ss_tl",
-        "description": "Hydro Flask 20-Oz Stainless Steel Wide Mouth Bottle Only $14.96!"
+        "description": "Get this durable and stylish Hydro Flask bottle at a great price. Perfect for keeping your drinks hot or cold on the go."
     },
-    
+    {
+        "title": "Organic Heirloom Tomato Seeds - 50% Off",
+        "image": "path_to_tomato_seeds_image.jpg",
+        "link": "https://example.com/organic-tomato-seeds",
+        "description": "Start your garden with these organic heirloom tomato seeds. Now available at half the price!"
+    },
+    // Add more deal objects here
+]
