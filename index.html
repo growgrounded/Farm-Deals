@@ -1,29 +1,26 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Farm and Off-Grid Deals</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- Add additional stylesheets or head elements here -->
+    <!-- Additional stylesheets or head elements can be added here -->
 </head>
-
 <body>
-
 
     <!-- Main Content Container -->
     <div class="main-container">
 
-        <!-- Header Section -->
+        <!-- Header Section with Logo -->
         <header>
             <div class="logo-container centered">
                 <a href="index.html">
-                    <img src="WhatsApp Image 2023-11-23 at 18.19.38.jpeg" alt="Farm Deals Logo">
+                    <img src="path_to_logo.jpeg" alt="Farm Deals Logo">
                 </a>
             </div>
-            <!-- Rest of your header content -->
+            <!-- Additional header content can be added here -->
         </header>
-
 
         <!-- Main Content Area -->
         <main>
@@ -31,7 +28,7 @@
             <section id="daily-deals">
                 <h2>Daily Deals</h2>
                 <div id="deals-container">
-                    <!-- Deals will be loaded here -->
+                    <!-- Deals will be dynamically loaded here -->
                 </div>
             </section>
 
@@ -39,17 +36,11 @@
             <section id="newsletter">
                 <h2>Subscribe to Our Weekly Newsletter</h2>
                 <form name="contact" netlify>
-                    <p>
-                        <label>Name <input type="text" name="name" /></label>
-                    </p>
-                    <p>
-                        <label>Email <input type="email" name="email" /></label>
-                    </p>
-                    <p>
-                        <button type="submit">Send</button>
-                    </p>
+                    <p><label>Name <input type="text" name="name" /></label></p>
+                    <p><label>Email <input type="email" name="email" /></label></p>
+                    <p><button type="submit">Send</button></p>
                 </form>
-                <!-- Additional form fields or elements can be added here -->
+                <!-- Additional form fields can be added here -->
             </section>
         </main>
 
@@ -59,8 +50,7 @@
                 <!-- About Us Section -->
                 <div class="footer-section">
                     <h4>About Us</h4>
-                    <p>Learn more about Farm and Off-Grid Deals and our mission to bring you the best sustainable and
-                        organic deals.</p>
+                    <p>Learn more about Farm and Off-Grid Deals and our mission to bring you the best sustainable and organic deals.</p>
                 </div>
 
                 <!-- Contact Information Section -->
@@ -74,7 +64,7 @@
                     <h4>Follow Us</h4>
                     <p>
                         <a href="https://www.youtube.com/channel/UCj8YrNJPRaW18P3oYJPyLbg">YouTube</a><br>
-                        <a href="https://www.instagram.com/growgrounded/?igshid=NTc4MTIwNjQ2YQ%3D%3D">Instagram</a>
+                        <a href="https://www.instagram.com/growgrounded/">Instagram</a>
                     </p>
                 </div>
             </div>
@@ -86,7 +76,7 @@
         </footer>
     </div>
 
-    <!-- JavaScript File -->
+    <!-- JavaScript for Dynamic Deal Loading -->
     <script src="script.js"></script>
     <script>
         fetch('deals.json')
@@ -98,16 +88,13 @@
                     dealElement.innerHTML = `
                         <img src="${deal.image}" alt="Image of ${deal.title}">
                         <h3><a href="${deal.link}">${deal.title}</a></h3>
-                        <p>${deal.description}</p>
-                    `;
+                        <p>${deal.description}</p>`;
                     container.appendChild(dealElement);
                 });
             })
             .catch(error => console.error('Error loading deals:', error));
     </script>
-
-    <!-- Add additional JavaScript files or scripts here -->
+    <!-- Additional JavaScript files or scripts can be added here -->
 
 </body>
-
 </html>
